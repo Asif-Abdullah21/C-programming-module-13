@@ -1,17 +1,18 @@
 /*
-
-  *
- ***
+ 
 *****
+ ***
+  *
 
 */
 
 #include<stdio.h>
 int main()
 {
-    int n,k=1,space;
+    int n,k,space;
     scanf("%d",&n);
-    space=n-1;
+
+    space=0,k=(n*2)-1;
 
     for (int i = 1; i <= n; i++)
     {
@@ -25,15 +26,10 @@ int main()
             printf("*");
         }
 
-      /*  for (int j = 1; j <= space; j++)
-        {
-            printf(" ");
-        } */
-
         //A single line is finished here
 
-        k=k+2;
-        space--;
+        k=k-2;
+        space++;
         printf("\n");
     }
     
